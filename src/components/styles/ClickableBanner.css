@@ -1,0 +1,15 @@
+.banner-container {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .banner-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .banner-container:hover {
+    opacity: 0.9;
+  }
+  
