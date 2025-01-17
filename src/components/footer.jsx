@@ -6,7 +6,7 @@ import KPData_img from "../assets/kp-data.png";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" id="footer">
       <div className="footer-container">
         <div className="footer-logo">
           <img src={Footer_img} alt="Milton Ochoa Logo" />

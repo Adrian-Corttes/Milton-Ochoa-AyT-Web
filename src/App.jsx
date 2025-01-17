@@ -6,13 +6,12 @@ import Footer from './components/footer';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" id='app'>
       <Header />
       <div className="main-content">
         <Slider/>
         <ClickableBanner/>
         <Footer/>
-
       </div>
     </div>
   );

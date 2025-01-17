@@ -3,29 +3,24 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 20px;
-  background-color: #FFF;
+  background-color: #fff;
   border-bottom: 1px solid #ddd;
-  position: fixed; /* Hace que el header sea fijo */
-  top: 0; /* Se coloca en la parte superior */
+  position: fixed;
+  top: 0;
   left: 0;
-  width: 100%; /* Ocupa todo el ancho */
-  z-index: 1000; /* Asegura que esté encima de otros elementos */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Agrega una sombra para mejor visualización */
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header-left {
   display: flex;
   align-items: center;
+  
 }
 
 .logo {
   height: 60px;
-  margin-right: 10px;
-}
-
-.tagline {
-  font-size: 20px;
-  color: #4a4a4a;
 }
 
 .header-nav {
@@ -43,15 +38,57 @@
 }
 
 .nav-links li {
-  font-size: 16px !important;
+  font-size: 16px;
   font-weight: 600;
   color: #333;
   cursor: pointer;
+  position: relative; /* Necesario para el menú desplegable */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-links a:hover {
+  color: #00bcd4;
 }
 
 .nav-links .active {
   color: #00bcd4;
   font-weight: bold;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.dropdown-menu li a:hover {
+  color: #00bcd4;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 .virtual-store {
@@ -64,67 +101,14 @@
   margin-left: 20px;
 }
 
+
 .virtual-store:hover {
   background-color: #333;
   color: white;
 }
 
-body {
-  padding-top: 80px; /* Ajusta el espacio para evitar que el contenido quede oculto detrás del header fijo */
-}
 
-  
-  .header-left {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    height: 60px;
-    margin-right: 10px;
-  }
-  
-  .tagline {
-    font-size: 20px;
-    color: #4a4a4a;
-  }
-  
-  .header-nav {
-    display: flex;
-    align-items: center;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-links li {
-    font-size: 14px;
-    color: #333;
-    cursor: pointer;
-  }
-  
-  .nav-links .active {
-    color: #00bcd4;
-    font-weight: bold;
-  }
-  
-  .virtual-store {
-    background-color: transparent;
-    border: 1px solid #333;
-    color: #333;
-    padding: 5px 10px;
-    font-size: 14px;
-    cursor: pointer;
-    margin-left: 20px;
-  }
-  
-  .virtual-store:hover {
-    background-color: #333;
-    color: white;
-  }
-  
+.virtual-store a {
+  text-decoration: none;
+  color: inherit;
+}

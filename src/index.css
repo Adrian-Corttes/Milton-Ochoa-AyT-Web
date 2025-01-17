@@ -1,3 +1,4 @@
 body{
     font-family: raleway, sans-serif;
+    padding-top: 80px; /* Ajusta el espacio para evitar que el contenido quede oculto detrás del header fijo */
 }
