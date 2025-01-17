@@ -1,12 +1,13 @@
 import './styles/Header.css'
-import Logo from '../assets/logo.png';
+// import Logo from '../assets/logo.png';
+import Logo2 from '../assets/artwork.png'
 
 function Header() {
   return (
     <header className="header">
       <div className="header-left">
-        <img src={Logo} alt="Milton Ochoa" className="logo" />
-        <span className="tagline">Antioquia, Tolima y Chocó</span>
+        <img src={Logo2} alt="Milton Ochoa" className="logo" />
+        {/* <span className="tagline">Antioquia, Tolima y Chocó</span> */}
       </div>
       <nav className="header-nav">
         <ul className="nav-links">
@@ -18,7 +19,7 @@ function Header() {
           <li>ATENCIÓN AL CLIENTE</li>
           {/* <li>PAGOS</li> */}
         </ul>
-        <button className="virtual-store"><a href="https://miltonochoa.com.co/web/">CONSULTA TUS RESULTADOS</a></button>
+        <button className="virtual-store"><a href="https://consultas.miltonochoa.com/consultar_resultados/">CONSULTA TUS RESULTADOS</a></button>
       </nav>
     </header>
   );
